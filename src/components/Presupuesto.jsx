@@ -7,10 +7,10 @@ const Presupuesto = ({setPresupuesto, setRestante, setCampo}) => {
     //function para leer el presupuesto
     //parseInt para convertir de string a number:)
     const definirPresupuesto = e => {
-        setCantidad( parseInt(e.target.value, 10))
+        setCantidad( parseInt(e.target.value, 10));
     }
     //definir presupuesto
-    const addPresupuesto = e =>{
+    const agregarPresupuesto = e =>{
         e.preventDefault();
         //validar
         if(cantidad < 1 || isNaN(cantidad) ){
@@ -29,7 +29,7 @@ const Presupuesto = ({setPresupuesto, setRestante, setCampo}) => {
         <h2>Coloca tu presupuesto</h2>
        { error ? <Error mensaje="Ups! El presupuesto no es correcto"/>  : null}
         <form
-        onSubmit={addPresupuesto}>
+        onSubmit={agregarPresupuesto}>
             <input 
             type="number"
             className="u-full-width"
