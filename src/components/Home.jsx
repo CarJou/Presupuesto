@@ -11,15 +11,15 @@ const Home = () => {
    const [restante, setRestante] = useState(0);
    const [mostrarCampo, setCampo] = useState(true);
    //agregar un listado de los gastos
-   const [gastos, setGastos] = useState([]);
-   const [ gasto, GuardarGasto] = useState({});
-   const [crearGasto, setCrearGasto] = useState(false);
-
+   //const [gastos, setGastos] = useState([]);
+   const [ gastos, GuardarGastos] = useState([]);
+   const [gasto, setGasto] = useState({});
+   const [crearGasto, guardarCrearGasto] = useState(false);
    //useEffect actualiza el restante
   useEffect( () => {
     if(crearGasto){
       //agrega el nuevo presupuesto
-      GuardarGasto([
+      GuardarGastos([
         ...gastos, 
         gasto
       ]);
@@ -27,9 +27,9 @@ const Home = () => {
       const presupuestoRestante= restante - gasto.cantidad;
       setRestante(presupuestoRestante);
       //reset a false
-      setCrearGasto(false);
+      guardarCrearGasto(false);
     }
-  }, [gasto]);
+  }, [gasto, crearGasto, restante, gastos]);
 
 
   
@@ -41,18 +41,18 @@ const Home = () => {
        <h1>Gasto semanal</h1>
        <div className="contenido-principal contenido">
          { mostrarCampo ? 
-         (
+         
          <Presupuesto
        setPresupuesto={setPresupuesto}
        setRestante={setRestante} 
-       setCampo={setCampo}/>) 
+       setCampo={setCampo}/> 
        : 
        <>
        <div className="row">
          <div className="one-half column">
         <Form
-        GuardarGasto={GuardarGasto}
-        setCrearGasto={setCrearGasto}
+        guardarCrearGasto = {guardarCrearGasto}
+        setGasto={setGasto}
         />  
         </div>
        

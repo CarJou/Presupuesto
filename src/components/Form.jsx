@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import Error from "./Error";
 import shortid from "shortid";
 
 
-const Form = ({setCrearGasto, GuardarGasto }) => {
+const Form = ({setGasto, guardarCrearGasto }) => {
 
     const [nombre, setNombre] = useState("");
     const [cantidad, setCantidad] = useState(0);
@@ -14,7 +15,7 @@ const Form = ({setCrearGasto, GuardarGasto }) => {
         e.preventDefault();
     
     //validar si la cantidad es -1, si es campo vacio o nan y si es string vacio
-    if(cantidad < 1 || isNaN(cantidad) || nombre.trim() === ""){
+    if(cantidad < 1 || isNaN( cantidad )  || nombre.trim() === " "){
         setError(true);
         return;
     }
@@ -28,8 +29,8 @@ const Form = ({setCrearGasto, GuardarGasto }) => {
  }
 
     //pasar el gasto al listado
-    GuardarGasto(gasto);
-    setCrearGasto(true);
+    setGasto(gasto);
+    guardarCrearGasto(true);
  
     //resetear el form 
      setNombre("");
@@ -73,5 +74,10 @@ const Form = ({setCrearGasto, GuardarGasto }) => {
            </form>
         </>
     )
+}
+Form.propTypes ={
+    guardarCrearGasto: PropTypes.func.isRequired,
+    setGasto: PropTypes.func.isRequired
+
 }
 export default Form;
