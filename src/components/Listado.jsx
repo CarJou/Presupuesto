@@ -15,8 +15,8 @@ const Listado = ({gastos}) =>(
 }
 </div>
     );
-Listado.propTypes ={
-    gastos: PropTypes.array.isRequired
-}
+    Listado.propTypes ={
+        gastos: PropTypes.array.isRequired
+    }
 
 export default Listado;
