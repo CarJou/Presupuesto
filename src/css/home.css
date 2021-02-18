@@ -1,6 +1,4 @@
-body{
-    background: #FFFFFF;
-}
+
 div.content-center {
     width: 100%;
     height: auto;
@@ -9,6 +7,7 @@ div.content-center {
     justify-content: center;
     align-items: center;
     margin-bottom: auto;
+    background: #FFFFFF;
   }
 
 h1.text, h2.text{

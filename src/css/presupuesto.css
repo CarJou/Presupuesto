@@ -1,0 +1,17 @@
+input.button{
+    background-color: #FFD700;
+    border: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #332F5D;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin: auto;
+    text-transform: none;
+}
+input.button:hover{
+background-color: #FEFC21;
+    border:  none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

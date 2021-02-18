@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Error from "./Error";
 import PropTypes from "prop-types";
+import "../css/presupuesto.css";
 
 const Presupuesto = ({setPresupuesto, setRestante, setCampo}) => {
     const [cantidad, setCantidad] = useState(0);
@@ -27,21 +28,21 @@ const Presupuesto = ({setPresupuesto, setRestante, setCampo}) => {
     }
     return(
         <>
-        <h2>Coloca tu presupuesto</h2>
+        <h2 className="pres-title">Colocá tu presupuesto</h2>
        { error ? <Error mensaje="Ups! El presupuesto no es correcto"/>  : null}
         <form
         onSubmit={agregarPresupuesto}>
             <input 
             type="number"
             className="u-full-width"
-            placeholder="Coloca tu presupuesto"
+            placeholder="Ej: $398"
             onChange={definirPresupuesto}/>
 
             <input 
             type="submit"
-            className="button-primary u-full-width"
-            value="Definir presupuesto"
-            />
+            className="button"
+            value="Ok"
+            /> 
         </form>
         </>
     )

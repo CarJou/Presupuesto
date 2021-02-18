@@ -6,10 +6,10 @@ const Control = ({presupuesto, restante}) => {
     return(
     <>
     <div className="alert alert-primary">
-    Presupuesto: $ {presupuesto}
+    Presupuesto: ${presupuesto}
     </div>
     <div className={revisarPresupuesto(presupuesto, restante)}>
-    Restante $ {restante}
+    Restante -${restante}
     </div>
     </>
     )

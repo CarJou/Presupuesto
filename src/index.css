@@ -1,16 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*/
 .alert p {
   margin-bottom: 0!important;
 }
 body {
-  background:black;
-  /*background: rgb(107, 245, 137); 
-  font-family: 'Bree Serif', serif;*/
   margin: 0;
-  padding: 0; 
- 
-
+  padding: 0;
 }
+h1.title{
+  font-weight: 100;
+  color: #FC90B0;
+  text-align: center;
+  font-size: 3rem !important;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.pres-title{
+  font-size: 25px;
+}
+
 header {
   margin: 30px 0;
 }
@@ -18,10 +27,14 @@ header {
   padding:20px;
 }
 .contenido-principal {
-  
   padding: 30px;
   border-radius: 20px;
+  background-color: #fc90b017;
+  box-shadow: 2px 0px 20px -10px black;
+
+
 }
+
 .presupuesto p{
   margin-bottom: 0;
   font-weight: bold;
@@ -32,21 +45,7 @@ header {
 #gastos {
   margin-bottom: 30px;
 }
-/*
-h1 {
-  font-weight: 100;
-  color: rgb(48, 179, 240);
-  text-align: center;
-  font-size: 4.8rem!important;
-}
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  color:#004e92;
-  margin-bottom:30px;
-  font-size:3rem!important;
-  text-align: center;
-}*/
+
 .campo {
   margin-bottom: 2rem;
 }
@@ -58,28 +57,26 @@ h2 {
   padding: .75rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: 15px;
+  color:#333333;
 }
 .alert-primary {
-  color: #004085;
-  background-color: #cce5ff;
-  border-color: #b8daff;
+  background-color: #fc90c060;
+  border-color: none;
 }
-.alert-success {
-  color: #155724;
-  background-color: #d4edda;
-  border-color: #c3e6cb;
+.alert-success, .alert-warning{
+  background-color: rgba(128, 128, 128, 0.178);
+  border-color: none;
 }
 .alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
+  /*background-color: #e57373;*/
+  background-color: #FFD700;
+  border-color: none;
+ 
+ 
 }
-.alert-warning {
-  color: #856404;
-  background-color: #fff3cd;
-  border-color: #ffeeba;
-}
+ 
+
 .gastos-realizados  {
   margin-bottom: 2rem;
 }
@@ -99,7 +96,8 @@ h2 {
   margin:0;
 }
 .gastos-realizados li p .gasto {
-  background-color: #004085;
+  background-color: #FC90C0;
+  border-radius: 15px;
   padding: 1rem;
-  color:white;
+  color:#333333;
 }

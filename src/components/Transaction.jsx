@@ -3,6 +3,7 @@ import Presupuesto from "./Presupuesto";
 import Form from "./Form";
 import Listado from "./Listado";
 import Control from "./Control";
+import "../css/presupuesto.css";
 
 const Home = () => {
 
@@ -31,8 +32,6 @@ const Home = () => {
     }
   }, [gasto, crearGasto, restante, gastos]);
 
-
-  
    
     return(
         <>
@@ -40,7 +39,7 @@ const Home = () => {
      <header>
        
        <div className="contenido-principal contenido">
-         <h1>Gasto semanal</h1>
+         <h1 className="title">Mis gastos</h1>
          { mostrarCampo ? 
          
          <Presupuesto

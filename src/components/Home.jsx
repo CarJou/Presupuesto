@@ -15,7 +15,7 @@ const Home = ({history}) => {
 
  
      <div className="container-text">
- <h1 className="text">Ahorrá</h1>
+ <h1 className="text">Controlá</h1>
  <h2 className="text">tu dinero!</h2>
  <button onClick={handleOnClick} className="button">
      Ingresar

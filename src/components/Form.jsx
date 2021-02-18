@@ -41,12 +41,12 @@ const Form = ({setGasto, guardarCrearGasto }) => {
         <>
         <form onSubmit={agregarGasto}>
         
-                   <h2>Agrega tus gastos aqui</h2>
+                   <h2 className="pres-title">Agrega tus gastos aquí</h2>
                    { error ? 
                    <Error mensaje="Ambos campos son obligatorios o el presupuesto es incorrecto"/>
                    : null }
                    <div className="campo">
-                       <label>Nombre del gasto</label>
+                       <label>Nombre:</label>
                        <input 
                        type="text"
                        className="u-full-width"
@@ -56,7 +56,7 @@ const Form = ({setGasto, guardarCrearGasto }) => {
                        />
                    </div>
                    <div className="campo">
-                       <label>Cantidad del gasto</label>
+                       <label>Valor:</label>
                        <input 
                        type="number"
                        className="u-full-width"
@@ -67,8 +67,8 @@ const Form = ({setGasto, guardarCrearGasto }) => {
                    </div>
                    <input 
                    type="submit"
-                   className="button-primary u-full-width"
-                   value="Agregar Gasto"/>
+                   className="button"
+                   value="Agregar"/>
               
           
            </form>

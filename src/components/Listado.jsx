@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Listado = ({gastos}) =>(
 
 <div className="gastos-realizados">
-    <h2>Listado</h2>
+    <h2 className="pres-title">Listado</h2>
 {gastos.map(gasto=>(
     <Gastos 
          key = {gasto.id}
