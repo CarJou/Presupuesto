@@ -79,12 +79,14 @@ header {
 
 .gastos-realizados  {
   margin-bottom: 2rem;
+  
 }
 .gastos-realizados li{
   list-style: none;
   margin-bottom: 0rem;
   border-bottom: 1px solid #e1e1e1;
   padding: 1rem 0;
+ 
 }
 .gastos-realizados li:last-of-type {
   margin-bottom: 0!important;
@@ -94,10 +96,12 @@ header {
   justify-content: space-between;
   align-items: center;
   margin:0;
+  text-transform: capitalize
 }
 .gastos-realizados li p .gasto {
   background-color: #FC90C0;
   border-radius: 15px;
   padding: 1rem;
-  color:#333333;
+  color:#333333; 
+  
 }
