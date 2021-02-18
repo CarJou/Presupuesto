@@ -1,0 +1,36 @@
+div.nav-container {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    height: 55px;
+    background-color: #fa9ab762;
+}
+  button.return {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    background-color: #FFD700;
+    border-radius: 50%;
+    outline: none;
+    background-image: url("../images/return.png");
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    padding: 0%;
+    transition-duration: 0.4s;
+  }
+  button.return:hover{
+    background-color: #FEFC21;
+    border:  none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  p.Dev {
+    font-size: 12px;
+    height: 40px;
+    margin: 20px;
+    margin-left: auto;
+    font-weight: bold;
+  }

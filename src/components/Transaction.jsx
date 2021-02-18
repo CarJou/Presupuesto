@@ -4,7 +4,7 @@ import Form from "./Form";
 import Listado from "./Listado";
 import Control from "./Control";
 import "../css/presupuesto.css";
-
+import Nav from "./Nav";
 const Home = () => {
 
    //definir el state
@@ -35,6 +35,7 @@ const Home = () => {
    
     return(
         <>
+        <Nav/>
         <div className="container">
      <header>
        

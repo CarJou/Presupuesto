@@ -3,6 +3,7 @@ import Error from "./Error";
 import PropTypes from "prop-types";
 import "../css/presupuesto.css";
 
+
 const Presupuesto = ({setPresupuesto, setRestante, setCampo}) => {
     const [cantidad, setCantidad] = useState(0);
     const [error, setError] = useState(false);
@@ -28,6 +29,7 @@ const Presupuesto = ({setPresupuesto, setRestante, setCampo}) => {
     }
     return(
         <>
+        
         <h2 className="pres-title">Colocá tu presupuesto</h2>
        { error ? <Error mensaje="Ups! El presupuesto no es correcto"/>  : null}
         <form
