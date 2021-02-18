@@ -10,7 +10,7 @@ const Home = ({history}) => {
  <>
  <div className="content-center">
  <div className="container-img">
-    <img src={chanchi} className="img-home"></img>
+    <img src={chanchi} className="img-home" alt="imagen home"></img>
  </div>
 
  
