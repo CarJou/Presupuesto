@@ -11,11 +11,18 @@ const Nav = () => {
 
       <p className="Dev">
         Desarrollado por Carla Joumier
+        
         <span role="img" aria-label="emojis">
           {" "}
           🌈✨{" "}
         </span>
       </p>
+      <a className="name"
+           href="https://www.linkedin.com/in/carla-joumier/" 
+           target="_blank"
+           rel="noreferrer">
+        <button className="logo"></button>
+      </a>
     </div>
   );
 };

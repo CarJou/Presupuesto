@@ -34,3 +34,25 @@ div.nav-container {
     margin-left: auto;
     font-weight: bold;
   }
+ 
+  button.logo {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-image: url("../images/linkedin.png");
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    padding: 0%;
+    transition-duration: 0.4s;
+  }
+  button.logo:hover{
+    border-radius: 50%;
+    background-image: url("../images/linkedin-h.png");
+    background-size: 34px;
+    border:  none;
+  }
