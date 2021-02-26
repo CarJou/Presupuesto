@@ -36,7 +36,7 @@ const Presupuesto = ({setPresupuesto, setRestante, setCampo}) => {
         onSubmit={agregarPresupuesto}>
             <input 
             type="number"
-            className="u-full-width"
+            className="u-full-width input"
             placeholder="Ej: $398"
             onChange={definirPresupuesto}/>
 
