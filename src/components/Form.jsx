@@ -7,7 +7,7 @@ import shortid from "shortid";
 const Form = ({setGasto, guardarCrearGasto }) => {
 
     const [nombre, setNombre] = useState("");
-    const [cantidad, setCantidad] = useState(0);
+    const [cantidad, setCantidad] = useState("");
     const [error, setError] = useState(false);
 
    //cuando el user agrega un gasto
@@ -34,7 +34,7 @@ const Form = ({setGasto, guardarCrearGasto }) => {
  
     //resetear el form 
      setNombre("");
-     setCantidad(0);
+     setCantidad("");
 }
 
     return(
@@ -50,7 +50,7 @@ const Form = ({setGasto, guardarCrearGasto }) => {
                        <input 
                        type="text"
                        className="u-full-width"
-                       placeholder="Ej. Transporte"
+                       placeholder="Ej: SUBE"
                        value={nombre}
                        onChange={ e => setNombre(e.target.value)}
                        />
@@ -60,7 +60,7 @@ const Form = ({setGasto, guardarCrearGasto }) => {
                        <input 
                        type="number"
                        className="u-full-width"
-                       placeholder="Ej $3060"
+                       placeholder="Ej: $3060"
                        value={cantidad}
                        onChange={ e => setCantidad(parseInt(e.target.value, 10))}
                        />

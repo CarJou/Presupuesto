@@ -14,7 +14,7 @@ const Nav = () => {
         
         <span role="img" aria-label="emojis">
           {" "}
-          🌈✨{" "}
+          🌈{" "}
         </span>
       </p>
       <a className="name"

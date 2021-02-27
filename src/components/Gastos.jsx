@@ -5,7 +5,11 @@ const Gastos = ({gasto}) =>(
 <li className ="gastos">
     <p>{gasto.nombre} 
     <span className="gasto"> $ {gasto.cantidad} </span>
+
+    <button className="delete">
+                Eliminar &times;</button>
     </p>
+    
 </li>
 );
 Gastos.propTypes ={

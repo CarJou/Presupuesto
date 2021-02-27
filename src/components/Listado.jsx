@@ -2,14 +2,14 @@ import React from "react";
 import Gastos from "./Gastos";
 import PropTypes from "prop-types";
 
-const Listado = ({gastos}) =>(
+const Listado = ({gastos, deleteGasto, gasto}) =>(
 
 <div className="gastos-realizados">
-    <h2 className="pres-title">Listado</h2>
 {gastos.map(gasto=>(
     <Gastos 
          key = {gasto.id}
          gasto={gasto} 
+         deleteGasto={deleteGasto}
     />
 ) )
 }
