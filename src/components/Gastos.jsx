@@ -6,8 +6,8 @@ const Gastos = ({gasto}) =>(
     <p>{gasto.nombre} 
     <span className="gasto"> $ {gasto.cantidad} </span>
 
-    <button className="delete">
-                Eliminar &times;</button>
+    {/*<button className="delete">
+                Eliminar &times;</button>*/}
     </p>
     
 </li>
